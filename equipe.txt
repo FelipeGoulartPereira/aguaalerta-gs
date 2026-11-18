@@ -1,0 +1,9 @@
+Projeto: ÁguaAlerta - Web Development (Global Solution 2026.2 - FIAP)
+
+Integrantes:
+1. Felipe Goulart Pereira - RM: 575270
+2. Nickolas Demetre Iliadis - RM: 575849
+3. Samuel Rosa de Sá - RM: 575929
+4. Ryan Kim de Camargo Takata - RM: 576213
+
+Repositório GitHub: PREENCHER COM O LINK https://github.com/FelipeGoulartPereira/aguaalerta-gs
