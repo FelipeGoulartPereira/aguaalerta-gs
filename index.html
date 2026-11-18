@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ÁguaAlerta: solução tecnológica para prevenir e alertar sobre enchentes em São Paulo.">
+  <title>ÁguaAlerta | Alertas contra enchentes em São Paulo</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilo -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body id="topo">
+
+  <!-- ========== MENU DE NAVEGAÇÃO ========== -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a class="marca" href="#topo" aria-label="ÁguaAlerta, voltar ao início">
+        <img src="img/logo-aguaalerta.svg" alt="Logo do ÁguaAlerta: gota d'água com sinal de confirmação" width="40" height="40">
+        <span>ÁguaAlerta</span>
+      </a>
+
+      <button class="menu-botao" id="menu-botao" type="button" aria-expanded="false" aria-controls="menu">
+        Menu
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Navegação principal">
+        <ul class="menu-lista">
+          <li><a href="#problema">Problema</a></li>
+          <li><a href="#tecnologia">Tecnologia</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#publico">Público-alvo</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#cadastro">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== BANNER INICIAL ========== -->
+    <div class="hero">
+      <div class="container hero-conteudo">
+        <div class="hero-texto">
+          <span class="etiqueta etiqueta-clara">Global Solution 2026.2</span>
+          <h1>Enchentes em São Paulo? Avise antes que a água suba.</h1>
+          <p>Alertas inteligentes para proteger quem vive na cidade das enchentes.</p>
+          <a class="botao" href="#problema">Conheça a solução</a>
+        </div>
+        <!-- SlideShow: os botões de pontos são criados pelo JavaScript -->
+        <div class="hero-imagem">
+          <div class="slideshow" id="slideshow" role="region" aria-roledescription="carrossel" aria-label="Imagens sobre enchentes em São Paulo">
+            <div class="slides">
+              <figure class="slide ativo">
+                <img src="img/ilustracao-enchente-sp.svg" alt="Ilustração de prédios de São Paulo com chuva e rua alagada, com um sensor de alerta no centro" width="640" height="420">
+                <figcaption>Chuva forte e ruas alagadas em São Paulo</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="img/slide-sensor-rio.svg" alt="Ilustração de sensor instalado ao lado de um córrego medindo o nível da água" width="640" height="420">
+                <figcaption>Sensores monitoram o nível dos córregos</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="img/slide-alerta-celular.svg" alt="Ilustração de celular exibindo um alerta de risco alto de alagamento no bairro" width="640" height="420">
+                <figcaption>O alerta chega no celular a tempo</figcaption>
+              </figure>
+            </div>
+            <button class="slide-botao slide-anterior" id="slide-anterior" type="button" aria-label="Slide anterior">&#8249;</button>
+            <button class="slide-botao slide-proximo" id="slide-proximo" type="button" aria-label="Próximo slide">&#8250;</button>
+            <div class="slide-pontos" id="slide-pontos"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== SEÇÃO 1: PROBLEMA ========== -->
+    <section class="secao" id="problema" aria-labelledby="titulo-problema">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <span class="etiqueta">Seção 1 · Problema</span>
+          <h2 id="titulo-problema">O problema das enchentes</h2>
+          <p>Chuvas fortes alagam ruas, córregos e casas em São Paulo. Moradores perdem bens, tempo e segurança.</p>
+          <p>Faltam avisos rápidos e precisos para a população se proteger a tempo.</p>
+        </div>
+        <ul class="cartoes">
+          <li class="cartao">
+            <img src="img/icone-impermeabilizacao.svg" alt="Ícone de solo de concreto com uma gota d'água" width="64" height="64">
+            <h3>Solo impermeabilizado</h3>
+            <span>O asfalto e o concreto impedem a absorção da água da chuva.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-drenagem.svg" alt="Ícone de grade de drenagem de rua" width="64" height="64">
+            <h3>Drenagem entupida</h3>
+            <span>Lixo e sedimentos bloqueiam bueiros e córregos, e a água transborda.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-alerta-tardio.svg" alt="Ícone de relógio com sinal de alerta" width="64" height="64">
+            <h3>Alertas tardios</h3>
+            <span>O aviso chega depois que a água já subiu nas ruas.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SEÇÃO 2: TECNOLOGIA ========== -->
+    <section class="secao secao-alt" id="tecnologia" aria-labelledby="titulo-tecnologia">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <span class="etiqueta">Seção 2 · Tecnologia</span>
+          <h2 id="titulo-tecnologia">Tecnologias utilizadas</h2>
+          <p>O ÁguaAlerta une sensores, inteligência artificial e aplicativo para monitorar a chuva em tempo real.</p>
+        </div>
+        <ul class="cartoes">
+          <li class="cartao">
+            <img src="img/icone-sensor.svg" alt="Ícone de sensor instalado em poste emitindo sinal" width="64" height="64">
+            <h3>Sensores IoT</h3>
+            <span>Medem o nível de rios e córregos e enviam os dados sem parar.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-ia.svg" alt="Ícone de chip de inteligência artificial" width="64" height="64">
+            <h3>Inteligência artificial</h3>
+            <span>Analisa chuva e histórico para prever alagamentos nas próximas horas.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-app.svg" alt="Ícone de celular exibindo uma gota d'água" width="64" height="64">
+            <h3>Aplicativo mobile</h3>
+            <span>Envia alertas no celular com o nível de risco e rotas seguras.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-nuvem.svg" alt="Ícone de nuvem recebendo dados" width="64" height="64">
+            <h3>Nuvem e dados abertos</h3>
+            <span>Guarda as informações e usa fontes abertas de meteorologia.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SEÇÃO 3: OBJETIVOS ========== -->
+    <section class="secao" id="objetivos" aria-labelledby="titulo-objetivos">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <span class="etiqueta">Seção 3 · Objetivos</span>
+          <h2 id="titulo-objetivos">Nossos objetivos</h2>
+          <p>Reduzir o impacto das enchentes com previsão, aviso rápido e apoio às decisões.</p>
+        </div>
+        <ul class="cartoes">
+          <li class="cartao">
+            <img src="img/icone-previsao.svg" alt="Ícone de gráfico com linha de previsão" width="64" height="64">
+            <h3>Prever alagamentos</h3>
+            <span>Antecipar o risco de enchente com horas de antecedência.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-sino.svg" alt="Ícone de sino de notificação" width="64" height="64">
+            <h3>Avisar em tempo real</h3>
+            <span>Alertar moradores por aplicativo e mensagem de texto.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-escudo.svg" alt="Ícone de escudo com sinal de aprovado" width="64" height="64">
+            <h3>Apoiar a prevenção</h3>
+            <span>Entregar mapas de risco para a Defesa Civil e a prefeitura.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SEÇÃO 4: PÚBLICO-ALVO ========== -->
+    <section class="secao secao-alt" id="publico" aria-labelledby="titulo-publico">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <span class="etiqueta">Seção 4 · Público-alvo</span>
+          <h2 id="titulo-publico">Quem será impactado</h2>
+          <p>A solução protege quem convive com o risco de alagamento todos os dias.</p>
+        </div>
+        <ul class="cartoes">
+          <li class="cartao">
+            <img src="img/icone-casa.svg" alt="Ícone de casa" width="64" height="64">
+            <h3>Moradores de áreas de risco</h3>
+            <span>Famílias perto de rios e córregos recebem avisos personalizados.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-loja.svg" alt="Ícone de loja com toldo" width="64" height="64">
+            <h3>Comerciantes e motoristas</h3>
+            <span>Protegem estoques e evitam ruas alagadas.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-predio.svg" alt="Ícone de prédio público" width="64" height="64">
+            <h3>Defesa Civil e prefeitura</h3>
+            <span>Ganham dados para agir rápido e planejar a prevenção.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-pessoas.svg" alt="Ícone de grupo de pessoas" width="64" height="64">
+            <h3>Escolas e comunidades</h3>
+            <span>Organizam rotas de saída e protegem estudantes.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SEÇÃO 5: BENEFÍCIOS ========== -->
+    <section class="secao" id="beneficios" aria-labelledby="titulo-beneficios">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <span class="etiqueta">Seção 5 · Benefícios</span>
+          <h2 id="titulo-beneficios">Benefícios da proposta</h2>
+          <p>O ÁguaAlerta salva tempo, reduz prejuízos e deixa a cidade mais preparada.</p>
+        </div>
+        <ul class="cartoes">
+          <li class="cartao">
+            <img src="img/icone-coracao.svg" alt="Ícone de coração com batimentos" width="64" height="64">
+            <h3>Vidas protegidas</h3>
+            <span>Avisos antecipados ajudam famílias a sair de áreas perigosas.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-economia.svg" alt="Ícone de moeda representando economia" width="64" height="64">
+            <h3>Menos prejuízo</h3>
+            <span>Quem se prepara protege móveis, estoques e veículos.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-cidade.svg" alt="Ícone de cidade com prédios e água ao fundo" width="64" height="64">
+            <h3>Cidade resiliente</h3>
+            <span>Os dados orientam obras de drenagem e prevenção.</span>
+          </li>
+          <li class="cartao">
+            <img src="img/icone-dados.svg" alt="Ícone de gráfico de barras" width="64" height="64">
+            <h3>Decisões com dados</h3>
+            <span>Gestores priorizam os bairros com maior risco de enchente.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SEÇÃO 6: CADASTRO (formulário com validação) ========== -->
+    <section class="secao secao-alt" id="cadastro" aria-labelledby="titulo-cadastro">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <span class="etiqueta">Cadastro</span>
+          <h2 id="titulo-cadastro">Receba alertas no seu bairro</h2>
+          <p>Preencha todos os campos e fique entre os primeiros a receber os avisos do ÁguaAlerta.</p>
+        </div>
+
+        <form class="formulario" id="formulario-cadastro" novalidate>
+          <div class="campo">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex.: Maria da Silva" autocomplete="name">
+            <span class="erro" id="erro-nome" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Ex.: maria@email.com" autocomplete="email">
+            <span class="erro" id="erro-email" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Ex.: Vila Prudente" autocomplete="off">
+            <span class="erro" id="erro-bairro" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="perfil">Você é</label>
+            <select id="perfil" name="perfil">
+              <option value="">Selecione uma opção</option>
+              <option value="morador">Morador de área de risco</option>
+              <option value="comerciante">Comerciante ou motorista</option>
+              <option value="defesa-civil">Defesa Civil ou prefeitura</option>
+              <option value="escola">Escola ou comunidade</option>
+            </select>
+            <span class="erro" id="erro-perfil" aria-live="polite"></span>
+          </div>
+
+          <fieldset class="campo campo-opcoes">
+            <legend>Como quer receber os alertas?</legend>
+            <div class="opcoes">
+              <label><input type="radio" name="canal" value="app"> Aplicativo</label>
+              <label><input type="radio" name="canal" value="sms"> Mensagem de texto</label>
+            </div>
+            <span class="erro" id="erro-canal" aria-live="polite"></span>
+          </fieldset>
+
+          <div class="campo campo-opcoes">
+            <label class="opcao-aceite"><input type="checkbox" id="aceite" name="aceite"> Aceito receber alertas do ÁguaAlerta</label>
+            <span class="erro" id="erro-aceite" aria-live="polite"></span>
+          </div>
+
+          <div class="formulario-acoes">
+            <button class="botao botao-enviar" type="submit">Quero receber alertas</button>
+            <button class="botao-limpar" type="reset" id="botao-limpar">Limpar</button>
+          </div>
+
+          <div id="mensagem-formulario" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== RODAPÉ PADRÃO ========== -->
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div class="rodape-marca">
+        <img src="img/logo-aguaalerta.svg" alt="Logo do ÁguaAlerta" width="40" height="40">
+        <div>
+          <strong>ÁguaAlerta</strong>
+          <small>Equipe ÁguaAlerta</small>
+        </div>
+      </div>
+
+      <nav class="rodape-links" aria-label="Links do rodapé">
+        <a href="#problema">Problema</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#publico">Público-alvo</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#cadastro">Cadastro</a>
+      </nav>
+    </div>
+    <div class="container rodape-base">
+      <small>© 2026 ÁguaAlerta · Global Solution 2026.2 · FIAP · Web Development</small>
+      <a href="#topo">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- Comportamento -->
+  <script src="js/menu.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/formulario.js"></script>
+</body>
+</html>
