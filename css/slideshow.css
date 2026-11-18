@@ -1,0 +1,133 @@
+/* ==========================================================
+   ÁguaAlerta | SlideShow
+   ========================================================== */
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: var(--cor-primaria);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+  display: flex;
+}
+
+/* Só o slide ativo aparece */
+.slide {
+  display: none;
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.slide.ativo {
+  display: block;
+  animation: aparecer 0.6s ease;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.slide figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 28px 20px 40px;
+  background: linear-gradient(to top, rgba(11, 60, 93, 0.9), transparent);
+  color: var(--cor-branco);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Botões anterior e próximo */
+.slide-botao {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--cor-primaria);
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.slide-botao:hover {
+  background-color: var(--cor-destaque);
+}
+
+.slide-anterior {
+  left: 12px;
+}
+
+.slide-proximo {
+  right: 12px;
+}
+
+/* Pontos de navegação */
+.slide-pontos {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slide-ponto {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 2px solid var(--cor-branco);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.slide-ponto:hover {
+  transform: scale(1.2);
+}
+
+.slide-ponto.ativo {
+  background-color: var(--cor-destaque);
+  border-color: var(--cor-destaque);
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide figcaption {
+    padding: 20px 14px 36px;
+    font-size: 0.85rem;
+  }
+
+  .slide-botao {
+    width: 36px;
+    height: 36px;
+    font-size: 1.4rem;
+  }
+}
