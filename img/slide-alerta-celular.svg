@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420">
+<defs><linearGradient id="fundo3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B3C5D"/><stop offset="1" stop-color="#1FA2C9"/></linearGradient></defs>
+<rect width="640" height="420" rx="24" fill="url(#fundo3)"/>
+<g fill="#fff" opacity=".12"><rect x="40" y="250" width="60" height="140"/><rect x="110" y="200" width="70" height="190"/><rect x="460" y="220" width="70" height="170"/><rect x="540" y="270" width="60" height="120"/></g>
+<rect x="225" y="24" width="190" height="372" rx="30" fill="#fff"/>
+<rect x="237" y="44" width="166" height="332" rx="20" fill="#EAF6FB"/>
+<rect x="290" y="30" width="60" height="8" rx="4" fill="#0B3C5D"/>
+<rect x="247" y="60" width="146" height="86" rx="14" fill="#F59E0B"/>
+<circle cx="271" cy="86" r="12" fill="#fff"/><path d="M271 80v7M271 91v1" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+<text x="290" y="91" font-family="sans-serif" font-size="14" font-weight="700" fill="#0B3C5D">ALERTA</text>
+<text x="257" y="116" font-family="sans-serif" font-size="12" fill="#0B3C5D">Risco alto de alagamento</text>
+<text x="257" y="132" font-family="sans-serif" font-size="12" fill="#0B3C5D">no seu bairro</text>
+<rect x="247" y="160" width="146" height="196" rx="14" fill="#D9F0F8"/>
+<path d="M247 230h146M247 290h146M290 160v196M350 160v196" stroke="#fff" stroke-width="6"/>
+<path d="M247 330c30-20 50 10 80-6s50-20 66-10v42H247z" fill="#1FA2C9" opacity=".7"/>
+<path d="M320 196c9 12 13 18 13 24a13 13 0 0 1-26 0c0-6 4-12 13-24z" fill="#F59E0B"/><circle cx="320" cy="220" r="5" fill="#fff"/>
+<path d="M160 110a60 60 0 0 0 0 60M480 110a60 60 0 0 1 0 60M130 90a90 90 0 0 0 0 100M510 90a90 90 0 0 1 0 100" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+</svg>

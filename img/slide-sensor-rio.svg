@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420">
+<defs><linearGradient id="ceu2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFE3F0"/><stop offset="1" stop-color="#EAF6FB"/></linearGradient></defs>
+<rect width="640" height="420" rx="24" fill="url(#ceu2)"/>
+<path d="M0 250H160L230 420H0Z" fill="#5F7D95"/><path d="M640 250H480L410 420H640Z" fill="#5F7D95"/>
+<path d="M0 250H160" stroke="#0B3C5D" stroke-width="8"/><path d="M640 250H480" stroke="#0B3C5D" stroke-width="8"/>
+<polygon points="193,320 447,320 410,420 230,420" fill="#1FA2C9"/>
+<path d="M193 320c20-10 40-10 63 0s43 10 63 0 43-10 63 0 40 10 65 0" fill="none" stroke="#fff" stroke-width="3" opacity=".7"/>
+<g stroke="#fff" stroke-width="3"><path d="M150 290l30 0M158 310l30 0M166 330l30 0" opacity=".8"/></g>
+<rect x="516" y="130" width="8" height="120" fill="#0B3C5D"/>
+<rect x="490" y="96" width="60" height="38" rx="8" fill="#0B3C5D"/><circle cx="520" cy="115" r="7" fill="#F59E0B"/>
+<path d="M500 80a28 28 0 0 1 40 0M488 68a46 46 0 0 1 64 0" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+<rect x="36" y="34" width="230" height="86" rx="16" fill="#fff"/>
+<text x="56" y="64" font-family="sans-serif" font-size="18" font-weight="700" fill="#0B3C5D">Nível do córrego</text>
+<rect x="56" y="82" width="190" height="16" rx="8" fill="#D9F0F8"/>
+<rect x="56" y="82" width="150" height="16" rx="8" fill="#F59E0B"/>
+<text x="56" y="112" font-family="sans-serif" font-size="12" fill="#4A6275">Atenção: subindo rápido</text>
+</svg>
